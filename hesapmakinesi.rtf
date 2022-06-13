@@ -1,0 +1,244 @@
+{\rtf1\ansi\ansicpg1254\deff0\nouicompat\deflang1055{\fonttbl{\f0\fnil Consolas;}{\f1\fnil\fcharset238 Consolas;}{\f2\fnil\fcharset0 Consolas;}{\f3\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red43\green145\blue175;\red163\green21\blue21;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\sl240\slmult1\cf1\f0\fs19\lang31 using\cf2  System;\par
+\cf1 using\cf2  System.Collections.Generic;\par
+\cf1 using\cf2  System.ComponentModel;\par
+\cf1 using\cf2  System.Data;\par
+\cf1 using\cf2  System.Drawing;\par
+\cf1 using\cf2  System.Linq;\par
+\cf1 using\cf2  System.Text;\par
+\cf1 using\cf2  System.Threading.Tasks;\par
+\cf1 using\cf2  System.Windows.Forms;\par
+\par
+\cf1 namespace\cf2  WindowsFormsApp1\par
+\{\par
+    \cf1 public\cf2  \cf1 partial\cf2  \cf1 class\cf2  \cf3 Form1\cf2  : Form\par
+    \{\par
+        \cf1 public\cf2  \cf3 Form1\cf2 ()\par
+        \{\par
+            InitializeComponent();\par
+        \}\par
+        \cf1 void\cf2  sayiYaz1()\par
+        \{\par
+            \cf1 if\cf2  (textBox1.Text != \cf4 ""\cf2 )\par
+            \{\par
+                sayi = Convert.ToDouble(textBox1.Text);\par
+                label1.Text = sayi.ToString() + islem.ToString();\par
+                textBox1.Text = \cf4 ""\cf2 ;\par
+            \}\par
+            \cf1 else\cf2\par
+                label1.Text = \cf4 "say\f1\u305? bo\'ba olamaz"\cf2 ;\par
+            \par
+        \}\par
+        \cf1 void\cf2  sayiYaz2()\par
+        \{\par
+      \par
+            label1.Text = sayi.ToString() + islem.ToString()+sayi2.ToString()+\cf4 "="\cf2 +sonuc.ToString();\par
+            textBox1.Text = \cf4 ""\cf2 ;\par
+        \}\par
+        \cf1 private\cf2  \cf1 void\cf2  button10_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \par
+            islem = \cf4 "+"\cf2 ;\par
+            sayiYaz1();\par
+\par
+        \}\par
+\par
+        \cf1 double\cf2  sayi,sayi2,sonuc;\par
+        \cf1 string\cf2  islem;\par
+        \cf1 private\cf2  \cf1 void\cf2  button1_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \cf1 if\cf2 (textBox1.Text==\cf4 "0"\cf2 )\par
+            \{\par
+                textBox1.Text = \cf4 "1"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+                textBox1.Text += \cf4 "1"\cf2 ;\par
+            \}\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button9_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \cf1 if\cf2  (textBox1.Text == \cf4 "0"\cf2 )\par
+            \{\par
+                textBox1.Text = \cf4 "2"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+                textBox1.Text += \cf4 "2"\cf2 ;\par
+            \}\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button8_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \cf1 if\cf2  (textBox1.Text == \cf4 "0"\cf2 )\par
+            \{\par
+                textBox1.Text = \cf4 "3"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+                textBox1.Text += \cf4 "3"\cf2 ;\par
+            \}\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button7_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \cf1 if\cf2  (textBox1.Text == \cf4 "0"\cf2 )\par
+            \{\par
+                textBox1.Text = \cf4 "4"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+                textBox1.Text += \cf4 "4"\cf2 ;\par
+            \}\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button6_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \cf1 if\cf2  (textBox1.Text == \cf4 "0"\cf2 )\par
+            \{\par
+                textBox1.Text = \cf4 "5"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+                textBox1.Text += \cf4 "5"\cf2 ;\par
+            \}\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button5_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \cf1 if\cf2  (textBox1.Text == \cf4 "0"\cf2 )\par
+            \{\par
+                textBox1.Text = \cf4 "6"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+                textBox1.Text += \cf4 "6"\cf2 ;\par
+            \}\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button4_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \cf1 if\cf2  (textBox1.Text == \cf4 "0"\cf2 )\par
+            \{\par
+                textBox1.Text = \cf4 "7"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+                textBox1.Text += \cf4 "7"\cf2 ;\par
+            \}\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button3_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \cf1 if\cf2  (textBox1.Text == \cf4 "0"\cf2 )\par
+            \{\par
+                textBox1.Text = \cf4 "8"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+                textBox1.Text += \cf4 "8"\cf2 ;\par
+            \}\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button2_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \cf1 if\cf2  (textBox1.Text == \cf4 "0"\cf2 )\par
+            \{\par
+                textBox1.Text = \cf4 "9"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+                textBox1.Text += \cf4 "9"\cf2 ;\par
+            \}\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button11_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \cf1 if\cf2  (textBox1.Text == \cf4 "0"\cf2 )\par
+            \{\par
+                textBox1.Text = \cf4 "0"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+                textBox1.Text += \cf4 "0"\cf2 ;\par
+            \}\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button16_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \par
+            islem = \cf4 "-"\cf2 ;\par
+            sayiYaz1();\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button12_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \par
+            islem = \cf4 "*"\cf2 ;\par
+            sayiYaz1();\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button14_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \par
+            islem = \cf4 "/"\cf2 ;\par
+            sayiYaz1();\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button17_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \cf1 if\cf2 (button17.Text==\cf4 "Ge\f2\'e7mi\f1\'bai g\f2\'f6ster"\cf2 )\par
+            \{\par
+                groupBox1.Visible = \cf1 true\cf2 ;\par
+                \cf1 this\cf2 .Size = \cf1 new\cf2  Size(462, 342);\par
+                button17.Text = \cf4 "Ge\'e7mi\f1\'bai gizle"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+                groupBox1.Visible = \cf1 false\cf2 ;\par
+                \cf1 this\cf2 .Size = \cf1 new\cf2  Size(228, 342);\par
+                button17.Text = \cf4 "Ge\f2\'e7mi\f1\'bai g\f2\'f6ster"\cf2 ;\par
+            \}\par
+            \par
+           \par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  Form1_Load(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button15_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \cf1 if\cf2  (textBox1.Text != \cf4 ""\cf2 )sayi2= Convert.ToDouble(textBox1.Text);\par
+            \cf1 else\cf2\par
+                label1.Text = \cf4 "sayi girmediniz"\cf2 ;\par
+            \cf1 switch\cf2  (islem)\par
+            \{\par
+                \cf1 case\cf2  \cf4 "+"\cf2 :\par
+                    sonuc = sayi + sayi2;\par
+                    sayiYaz2();\par
+                    \cf1 break\cf2 ;\par
+                \cf1 case\cf2  \cf4 "-"\cf2 :\par
+                    sonuc = sayi - sayi2;\par
+                    sayiYaz2();\par
+                    \cf1 break\cf2 ;\par
+                \cf1 case\cf2  \cf4 "*"\cf2 :\par
+                    sonuc = sayi * sayi2;\par
+                    sayiYaz2();\par
+                    \cf1 break\cf2 ;\par
+                \cf1 case\cf2  \cf4 "/"\cf2 :\par
+                    sonuc = sayi / sayi2;\par
+                    sayiYaz2();\par
+                    \cf1 break\cf2 ;\par
+            \}\par
+            listBox1.Items.Add(label1.Text);\par
+        \}\par
+    \}\par
+\}\par
+\cf0\f3\fs22\par
+}
+ 
